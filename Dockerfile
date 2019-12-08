@@ -17,7 +17,7 @@ CMD ["/usr/sbin/init"]
 #Install dependancies and ansible
 RUN yum makecache fast && \ 
     yum -y update && \ 
-    yum -y install ansible && \ 
+    yum -y install vim ansible && \ 
     yum clean all
 
 #Setting up inventory file
